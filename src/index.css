@@ -8,16 +8,18 @@ body{
 }
 main{
   min-height: 100vh;
-  background: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7));
   padding:25px
 }
 
 .app{
-  background: url(images/night.png)no-repeat center center / cover;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
   transition: .4s ease-out;
 }
 .app.warm{
-  background: url(images/after_noon.png) no-repeat center center / cover;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.app.rain{
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 .search-box{
   width: 100%;
